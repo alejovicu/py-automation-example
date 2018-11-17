@@ -1,4 +1,4 @@
-#! /usr/bin/bash
+#! /usr/bin/sh
 
 docker rm -f db
 
