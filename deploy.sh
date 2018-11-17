@@ -1,7 +1,7 @@
 #! /usr/bin/sh
 
 cd db
-./deploy-db.sh
+sh deploy-db.sh
 
 cd ../api
-./deploy-api.sh
+sh deploy-api.sh
