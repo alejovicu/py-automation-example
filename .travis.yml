@@ -1,0 +1,13 @@
+sudo: required
+
+services:
+  - docker
+
+before_install:
+- cd db
+- ./deploy-db.sh
+- cd ../api
+- ./deploy-api.sh
+
+script:
+- curl -X GET http://localhost:5000/user/
