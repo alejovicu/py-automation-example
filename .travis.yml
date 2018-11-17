@@ -4,11 +4,7 @@ services:
   - docker
 
 before_install:
-  deploy:
-    - provider: script
-      script: sh deploy.sh
-      on:
-        branch: master
+- sh deploy.sh
 
 script:
 - curl -X GET http://localhost:5000/user/
