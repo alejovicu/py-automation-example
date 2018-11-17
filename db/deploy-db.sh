@@ -2,7 +2,7 @@
 
 docker rm -f db
 
-docker run --name db -e POSTGRES_PASSWORD=astrongpass -p 5432:5432 -d postgres
+docker run --name db -e POSTGRES_PASSWORD=astrongpass -d postgres
 
 echo "Wait for db service up..."
 sleep 15
