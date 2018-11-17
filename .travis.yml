@@ -7,4 +7,4 @@ before_install:
 - sh deploy.sh
 
 script:
-- curl -X GET http://localhost:30123/user/
+- docker run --rm --link py-api:py-api byrnedo/alpine-curl http://py-api:5000/user/
