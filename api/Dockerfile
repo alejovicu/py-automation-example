@@ -7,6 +7,7 @@ WORKDIR /app
 RUN pip install -r dependencies
 
 COPY ./flask_web/ /app
+COPY ./integration-tests/ /app
 
 ENTRYPOINT [ "python" ]
 

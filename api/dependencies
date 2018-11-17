@@ -1,3 +1,4 @@
 Flask==0.10.1
 psycopg2-binary
 configparser
+git+https://github.com/behave/behave
